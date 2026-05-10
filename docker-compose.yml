@@ -1,0 +1,10 @@
+services:
+  app:
+    # Esta es la imagen que se genera en tu propio repositorio de GitHub
+    image: ghcr.io/nxvzx/hogwarts_backend_991:latest
+    container_name: aaee_hogwarst_app_labp
+    restart: always
+    ports:
+      - "8080:8080" # El puerto que usa tu API
+    env_file:
+      - .env
